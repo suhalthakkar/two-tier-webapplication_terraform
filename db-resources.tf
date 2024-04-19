@@ -15,6 +15,5 @@ resource "aws_db_instance" "two-tier-db-1" {
   backup_retention_period     = 35
   backup_window               = "22:00-23:00"
   maintenance_window          = "Sat:00:00-Sat:03:00"
-  multi_az                    = false
-  skip_final_snapshot         = true
+  multi_az                    = true
 }
